@@ -14,5 +14,5 @@ while True:
     channel.basic_publish(exchange='', routing_key='messagebox', body=message)
     time.sleep(random.randint(1, 4))
     print(f'Message {message} sent successfully')
-
+    time.sleep(2)
     id += 1
